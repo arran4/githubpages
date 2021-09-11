@@ -1,10 +1,5 @@
 {{ partial "header.html" . }}
-<body
-        lang="{{ .Site.LanguageCode }}"
-        class="sans-serif w-90 w-80-m w-60-ns center mv2 mv5-ns"
-        itemscope
-        itemtype="http://schema.org/Article"
->
+<body lang="{{ .Site.LanguageCode }}" itemscope itemtype="http://schema.org/Article">
 
 <span class="b">/ </span>
 <a href="{{ .Site.BaseURL  }}" class="b bb bw1 pb1 no-underline black">{{ .Site.Title }}</a>
@@ -38,11 +33,7 @@
     <ul class="list pl0">
       {{ range where $posts "Title" "!=" .Title }}
       <li class="list pl0 lh-copy">
-        <a
-                class="f4 b dib black no-underline"
-                href="{{ .Permalink}}"
-        >{{ .Title }}</a
-        >
+        <a class="f4 b dib black no-underline" href="{{ .Permalink}}">{{ .Title }}</a>
         <span class="f6 gray">{{ .Date.Format "January 2, 2006" }}</span>
       </li>
       {{ end }}

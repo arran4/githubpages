@@ -1,14 +1,8 @@
 <!DOCTYPE html>
-<html
-        class=""
-        lang="{{ .Site.LanguageCode }}"
-        prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
->
+<html lang="{{ .Site.LanguageCode }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 <head>
     <meta charset="utf-8" />
-
     {{ partial "meta.html" . }}
-
     <title>{{ .Site.Title }}</title>
     <link rel="canonical" href="{{ .Permalink }}" />
     {{ $sitetitle := .Site.Title }}
@@ -22,16 +16,12 @@
     {{ end }}
     {{ partial "head_includes.html" . }}
 </head>
-<body
-        lang="{{ .Site.LanguageCode }}"
-        class="sans-serif w-90 w-60-ns center center-ns mv2 mv5-ns"
->
+<body lang="{{ .Site.LanguageCode }}" class="">
 <section id="main">
     <h1>{{$.Title}}</h1>
     <article itemprop="articleBody" id="content" class="w-90 lh-copy">
         {{ .Content }}
     </article>
-
 </section>
 <section id="sidebar">
     Recent posts:
