@@ -26,15 +26,20 @@
         lang="{{ .Site.LanguageCode }}"
         class="sans-serif w-90 w-60-ns center center-ns mv2 mv5-ns"
 >
+<section id="main">
+    <h1>{{$.Title}}</h1>
+    <article itemprop="articleBody" id="content" class="w-90 lh-copy">
+        {{ .Content }}
+    </article>
+
+</section>
 <section id="sidebar">
     Recent posts:
     <ul>
         {{- range $postI, $post := (.Paginate ( where site.RegularPages "Section" "posts" | first 3 ) ).Pages }}
-            <li><a href="{{$post.Permalink}}">{{$post.LinkTitle}} ({{$post.Date}})</a></li>
+        <li><a href="{{$post.Permalink}}">{{$post.LinkTitle}} ({{$post.Date}})</a></li>
         {{end}}
     </ul>
-</section>
-<section id="main">
 </section>
 
 {{ partial "footer.html" . }}
