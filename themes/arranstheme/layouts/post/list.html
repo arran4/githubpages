@@ -1,5 +1,8 @@
-<html>
-  <body>
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{ partial "head.html" . }}
+<body>
+    {{ partial "header.html" . }}
 <main>
     <article>
         <header>
@@ -17,5 +20,6 @@
     {{ end }}
     </ul>
 </main>
-  </body>
+    {{ partial "footer.html" . }}
+</body>
 </html>

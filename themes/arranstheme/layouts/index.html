@@ -1,22 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-<head>
-    <meta charset="utf-8" />
-    {{ partial "meta.html" . }}
-    <title>{{ .Site.Title }}</title>
-    <link rel="canonical" href="{{ .Permalink }}" />
-    {{ $sitetitle := .Site.Title }}
-    {{ with .OutputFormats.Get "RSS" }}
-    <link
-            href="{{ .RelPermalink }}"
-            rel="alternate"
-            type="application/rss+xml"
-            title="{{ $sitetitle }}"
-    />
-    {{ end }}
-    {{ partial "head_includes.html" . }}
-</head>
+{{ partial "head.html" . }}
 <body lang="{{ .Site.LanguageCode }}" class="">
+    {{ partial "header.html" . }}
 <section id="main">
     <h1>{{$.Title}}</h1>
     <article itemprop="articleBody" id="content" class="w-90 lh-copy">
