@@ -1,4 +1,11 @@
 baseURL = 'https://arran4.github.io/githubpages/'
 languageCode = 'en-us'
+defaultContentLanguage = 'en'
 title = 'Arrans Github Pages'
-theme = "arranstheme"
+theme = 'arranstheme'
+paginate = 10
+uglyURLs = true
+
+[params]
+  author = 'Arran'
+
