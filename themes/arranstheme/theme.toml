@@ -2,14 +2,14 @@
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
 name = "Arranstheme"
-description = ""
-tags = []
-features = []
+description = "A minimal Hugo theme used for Arran Ubels' GitHub Pages"
+tags = ["minimal", "example", "personal", "blog"]
+features = ["basic layout"]
 min_version = "0.41.0"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Arran Ubels"
+  homepage = "https://arran4.github.io"
 
 # If porting an existing theme
 [original]
