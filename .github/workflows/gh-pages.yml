@@ -22,8 +22,16 @@ jobs:
         with:
           hugo-version: '0.88.1'
 
+      - name: Cache Hugo resources
+        uses: actions/cache@v3
+        with:
+          path: resources
+          key: ${{ runner.os }}-hugoresources-${{ hashFiles('**/config.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-hugoresources-
+
       - name: Build
-        run: hugo --minify
+        run: hugo --gc --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
