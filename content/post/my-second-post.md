@@ -6,9 +6,8 @@ tags: ['sample']
 categories: ['sample-posts']
 ---
 
-Second post.. There are tools to generate the data above. But I just generated it.
+This is my second example post. The header above was generated automatically.
 
-This is 
-* mark down
-* Compiled to html
-
+Here is a small list written in Markdown:
+* Item one
+* Item two

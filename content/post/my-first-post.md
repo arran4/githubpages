@@ -6,4 +6,4 @@ tags: ['sample']
 categories: ['sample-posts']
 ---
 
-This is my first post... Will be deleted but just to test this. Predominately for demo purposes.
+Welcome to the blog! This short entry shows how a simple Markdown post looks using this theme.
