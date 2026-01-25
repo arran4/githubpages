@@ -1,7 +1,7 @@
-baseURL = 'https://example.com/' # Update this to your site's URL
+baseURL = 'https://arran4.github.io/githubpages/' # Update this to your site's URL
 languageCode = 'en-us'
 defaultContentLanguage = 'en'
-title = 'My New Hugo Site'
+title = 'Hugo GitHub Pages Template'
 theme = 'basic'
 paginate = 10
 uglyURLs = true
