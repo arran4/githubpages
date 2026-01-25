@@ -1,11 +1,10 @@
-baseURL = 'https://arran4.github.io/githubpages/'
+baseURL = 'https://example.com/' # Update this to your site's URL
 languageCode = 'en-us'
 defaultContentLanguage = 'en'
-title = 'Arrans Github Pages'
-theme = 'arranstheme'
+title = 'My New Hugo Site'
+theme = 'basic'
 paginate = 10
 uglyURLs = true
 
 [params]
-  author = 'Arran'
-
+  author = 'Me'
