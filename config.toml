@@ -3,8 +3,10 @@ languageCode = 'en-us'
 defaultContentLanguage = 'en'
 title = 'Hugo GitHub Pages Template'
 theme = 'basic'
-paginate = 10
 uglyURLs = true
+
+[pagination]
+  pagerSize = 10
 
 [params]
   author = 'Me'
